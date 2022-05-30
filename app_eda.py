@@ -27,5 +27,5 @@ def run_eda():
     st.subheader('파산 여부에 따른 과거 파산 여부')
     fig = px.histogram(df, x = 'loan_status', y = 'cb_person_default_on_file' , color = 'loan_status', histfunc = 'avg')
     st.plotly_chart(fig)
-    st.text('세 조건다 확연히 파산한 쪽이 더 높다.')
+    st.text('세 조건 모두 확연히 파산한 쪽이 더 높다.')
 
