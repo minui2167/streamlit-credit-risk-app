@@ -9,8 +9,8 @@ def run_ml():
     encoder = joblib.load('data/encoder.pkl')
     scaler = joblib.load('data/scaler.pkl')
 
-
-    st.subheader('파산 여부 예측')
+    btn = False
+    st.header('파산 여부 예측')
     df = pd.read_csv('data/credit_risk.csv', index_col = 0)
     col1, col2 = st.columns(2)
 
@@ -38,12 +38,16 @@ def run_ml():
             test = np.array([age, income, ownership, length, intent, grade, amount, rate, percent, default, len])
             test = test.reshape(1, -1)
             test = ct.transform(test)
-            test = scaler.transform(test)    
-            if classifier.predict(test)[0] == 0:
-                st.text('파산 저위험군 입니다.')
-            else:
-                st.text('파산 고위험군 입니다.')
-
+            test = scaler.transform(test)
+            btn = True    
+    
+    if btn:
+        if classifier.predict(test)[0] == 0:
+            st.subheader('파산 저위험군 입니다.')
+        else:
+            st.subheader('파산 고위험군 입니다.')
+    
+    
 
 
 
