@@ -23,7 +23,7 @@ def run_ml():
     with col2:
         grade = st.selectbox('등급', sorted(df['loan_grade'].unique()))
         amount = st.number_input('대출금액', 0, value = 8000)
-        rate = st.number_input('이자율', 0, value = 11)
+        rate = st.number_input('이자율', 0.0, value = 11.0)
         percent = income / amount
         len = st.number_input('신용 기록',0 , value = 4)
         default = st.checkbox('과거 파산 여부')
