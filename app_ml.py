@@ -34,14 +34,14 @@ def run_ml():
         default = np.array([default])
         default = default.reshape(1, -1)
         if st.button('예측'):
-            default = encoder.transform(default)
-            test = np.array([age, income, ownership, length, intent, grade, amount, rate, percent, default, len])
-            test = test.reshape(1, -1)
-            test = ct.transform(test)
-            test = scaler.transform(test)
             btn = True    
     
     if btn:
+        default = encoder.transform(default)
+        test = np.array([age, income, ownership, length, intent, grade, amount, rate, percent, default, len])
+        test = test.reshape(1, -1)
+        test = ct.transform(test)
+        test = scaler.transform(test)
         if classifier.predict(test)[0] == 0:
             st.subheader('파산 저위험군 입니다.')
         else:
