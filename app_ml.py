@@ -31,7 +31,7 @@ def run_ml():
         intent = st.selectbox('목적', df['loan_intent'].unique())
     with col2:
         # 조건 입력2
-        grade = st.selectbox('등급', sorted(df['loan_grade'].unique()))
+        grade = st.selectbox('대출등급', sorted(df['loan_grade'].unique()))
         amount = st.number_input('대출금액', 0, value = 8000)
         rate = st.number_input('이자율', 0.0, value = 11.0)
         percent = income / amount
