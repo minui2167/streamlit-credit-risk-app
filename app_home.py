@@ -3,7 +3,7 @@ import pandas as pd
 
 def run_home():
     # 제목
-    st.title('대출 에서 위험요소와 파산 예측')
+    st.title('대출에서 위험요소와 파산 예측')
 
     # 이미지 출력
     url = 'https://cdn.pixabay.com/photo/2019/02/22/12/04/investing-4013413__340.jpg'   
