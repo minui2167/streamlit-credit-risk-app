@@ -8,7 +8,8 @@
 [http://ec2-3-35-26-163.ap-northeast-2.compute.amazonaws.com:8503/](http://ec2-3-35-26-163.ap-northeast-2.compute.amazonaws.com:8503/)
 
 대출시 위험 요소 분석과 대출시 파산 위험 예측 앱입니다.
-데이터출처 kaggle
+
+데이터출처 [https://www.kaggle.com/datasets/laotse/credit-risk-dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
 ![사진](https://cdn.pixabay.com/photo/2019/02/22/12/04/investing-4013413__340.jpg)
 
