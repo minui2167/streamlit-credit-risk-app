@@ -29,8 +29,13 @@
 # 분석
 
 * plotly를 통해서 각 요소들 분포 시각화
+* 선택한 컬럼 히스토그램 불러오기
+* 파산 여부와의 상관관계 출력
 * groupby를 통해서 파산한 그룹과 아닌 그룹 비교 
 
 # 파산 예측
 
 * 각 요소들을 입력하면 DecisionTreeClassifier로 파산 고위험군과 저위험군 분류
+
+![다운로드 (3)](https://user-images.githubusercontent.com/105832345/173175988-1442976c-4fd5-4780-af8a-45d736e812c0.png)
+
