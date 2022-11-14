@@ -5,7 +5,7 @@
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/streamlit-FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
 
-[http://ec2-3-35-26-163.ap-northeast-2.compute.amazonaws.com:8503/](http://ec2-3-35-26-163.ap-northeast-2.compute.amazonaws.com:8503/)
+[ec2-3-34-50-142.ap-northeast-2.compute.amazonaws.com:8501/](ec2-3-34-50-142.ap-northeast-2.compute.amazonaws.com:8501/)
 
 대출시 위험 요소 분석과 대출시 파산 위험 예측 앱입니다.
 
